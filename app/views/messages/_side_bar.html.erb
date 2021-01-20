@@ -1,6 +1,6 @@
 <div class="side_bar_top">
   <div class="side_bar_user_name">
-  Tartaglia
+    <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="side_bar_create_room">
     <a href="#">チャットを作成する</a>
