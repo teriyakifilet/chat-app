@@ -10,7 +10,7 @@
   <%= render partial: 'message', collection: @messages %>
 </div>
 <div class="main_chat_bottom">
-  <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
+  <%= form_with model: [@room, @message], class: 'form_input', local: true do |f| %>
     <div class="form_input">
       <%= f.text_field :content, class: 'form_message', placeholder: 'type a message' %>
       <label class="form_image">
