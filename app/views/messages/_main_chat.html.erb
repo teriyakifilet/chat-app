@@ -7,32 +7,7 @@
   </div>
 </div>
 <div class="main_chat_center">
-  <div class="message_wrapper">
-    <div class="message_header">
-      <div class="message_header_name">
-        Tartaglia
-      </div>
-      <div class="message_header_time">
-        2021/1/19(Tue) 17:31:30
-      </div>
-    </div>
-    <div class="message_text">
-      おはよ先生
-    </div>
-  </div>
-  <div class="message_wrapper">
-    <div class="message_header">
-      <div class="message_header_name">
-        ZhongLi
-      </div>
-      <div class="message_header_time">
-        2021/1/19(Tue) 17:33:43
-      </div>
-    </div>
-    <div class="message_text">
-      おはよう
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <div class="main_chat_bottom">
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
